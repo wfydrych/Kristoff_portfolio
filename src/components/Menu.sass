@@ -1,0 +1,93 @@
+.menu
+    position: fixed
+    display: flex
+    top: 0
+    left: 0
+    marign: 0
+    padding: 0
+    width: 100vw
+    height: 10vh
+
+    &__logo
+        box-sizing: border-box
+        padding: 10px
+        height: 100%
+        width: auto
+        margin-right: 30%
+
+    &__links
+        display: block
+        line-height: 10vh
+        cursor: pointer
+        transition: .2s
+
+        &:hover
+            text-decoration: underline
+            transform: translateY(-10%)
+
+    &__social
+        box-sizing: border-box
+        padding: 10px
+        margin-top: 2vh
+        height: 6vh
+        width: 6vh
+        cursor: pointer
+        transition: .2s
+
+        &:hover
+            border-bottom: 2px solid black
+            transform: translateY(-10%)
+
+a
+    text-decoration: none
+    color: black
+
+nav
+    display: flex
+    flex-direction: row
+    flex-grow: 1
+    justify-content: space-evenly
+
+.menu-mobile
+    display: none
+
+@media (max-width: 950px)
+    .menu
+        display: none
+
+    .menu-mobile
+        position: fixed
+        display: flex
+        top: 0
+        left: 0
+        marign: 0
+        padding: 0
+        width: 100vw
+        height: 10vh
+
+        &__logo
+            box-sizing: border-box
+            padding: 1vh
+            height: 9vh
+            width: 9vh
+            margin-right: 10px
+
+        &__txt
+            display: flex
+            flex-direction: column
+            flex-grow: 1
+
+            span
+                line-height: 5vh
+                font-family: Montserrat
+
+                &:nth-child(1)
+                    font-size: 1.5em
+
+        &__btn
+            height: 6vh
+            width: 6vh
+            margin-top: 2vh
+            margin-right: 5px
+            cursor: pointer
+                    

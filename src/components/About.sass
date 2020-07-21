@@ -1,0 +1,81 @@
+.about
+    width: 100vw
+    height: 90vh
+    margin-top: 10vh
+    overflow: hidden
+
+    &__bg
+        width: 100vw
+        height: 90vh
+        transform: scale(1.1)
+
+    &__circle
+        display: block
+        position: absolute
+        background-color: #6BA0BE
+        opacity: 0.7
+        border-radius: 50%
+        width: 50vw
+        height: 50vw
+        bottom: -15vw
+        left: -10vw
+
+    &__krzys
+        position: absolute
+        bottom: 0
+        left: 0
+        height: 75vh
+
+    &__title
+        font-family: Libre Caslon Display
+        position: absolute
+        display: block
+        color: white
+        font-size: 3em
+        top: 20vh
+        right: 15vw
+
+    &__subtitle
+        font-family: Montserrat
+        position: absolute
+        display: block
+        color: white
+        font-size: 2em
+        top: 40vh
+        right: 10vw
+        width: 40vw
+        text-align: center
+
+@media (max-width: 950px)
+    .about
+
+        &__circle
+                display: block
+                position: absolute
+                background-color: #6BA0BE
+                opacity: 0.7
+                border-radius: 50%
+                width: 60vh
+                height: 60vh
+                bottom: -15vw
+                left: -10vw
+
+        &__krzys
+            position: absolute
+            bottom: 0
+            left: 0
+            height: 60vh
+
+        &__title
+            top: 15vh
+            width: 80vw
+            left: 10vw
+            font-size: 1.5em
+            text-align: center
+
+        &__subtitle
+            top: 23vh
+            width: 80vw
+            left: 10vw
+            font-size: 1.2em
+            text-align: center

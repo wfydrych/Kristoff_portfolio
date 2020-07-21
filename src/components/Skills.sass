@@ -1,0 +1,77 @@
+.skills
+    width: 100vw
+    height: 90vh
+    margin-top: 10vh
+    overflow: hidden
+    background: url(img/skills_bg.png)
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+
+    &__dot
+        display: block
+        position: absolute
+        top: 15vh
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: rgba(107, 160, 190, 0.7)
+        margin-left: 50vw
+        transform: translateX(-250%)
+
+    &__title
+        display: block
+        text-align: center
+        margin-top: 5vh
+        font-size: 3em
+        font-family: Libre Caslon Display
+
+    &__mainbox
+        width: 100vw
+        height: 60vh
+        margin-top: 10vh
+        display: flex
+        flex-direction: row
+        flex-wrap: wrap
+        justify-content: space-around
+
+        &__box
+            width: 40vw
+            height: 25vh
+            background-color: rgba(42, 119, 164, 0.5)
+
+            &__title
+                display: block
+                margin-top: 10px
+                text-align: center
+                color: white
+                font-size: 1.5em
+                font-family: Libre Caslon Display
+
+            &__description
+                display: block
+                margin: 10px 50px 0px 50px
+                text-align: center
+                color: white
+                font-size: 1.2em
+                font-family: Libre Caslon Display
+
+            &__more
+                display: block
+                text-align: right
+                margin-top: 20px
+                width: 95%
+                color: white
+                font-size: 1em
+                font-family: Libre Caslon Display
+                cursor: pointer
+
+@media (max-width: 950px)
+    .skills
+        overflow: scroll
+
+        &__mainbox
+            &__box
+                width: 80vw
+                height: 30vh
+                margin-bottom: 25px
