@@ -11,6 +11,10 @@ const Main = () => (
     <section className='main'>
     <Switch>
             <Route 
+                exact path='/' 
+                render = {text => <Hero></Hero>}>
+            </Route>
+            <Route 
                 exact path='/hero' 
                 render = {text => <Hero></Hero>}>
             </Route>
