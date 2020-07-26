@@ -1,4 +1,5 @@
 import React from 'react'
+import Hero from './Hero'
 import About from './About'
 import Skills from './Skills'
 import Experience from './Experience'
@@ -10,8 +11,8 @@ const Main = () => (
     <section className='main'>
     <Switch>
             <Route 
-                exact path='/' 
-                render = {text => <About></About>}>
+                exact path='/hero' 
+                render = {text => <Hero></Hero>}>
             </Route>
             <Route 
                 path='/about' 

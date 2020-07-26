@@ -82,12 +82,51 @@ nav
             img
                 height: 8vh
 
+        &__bg
+            display: none
+            position: absolute
+            top: 10vh
+            width: 100vw
+            height: 90vh
+            background-color: black
+            opacity: 0.7
+
         &__btn
+            display: block
             height: 6vh
             width: 6vh
             margin-top: 2vh
             margin-right: 15px
             cursor: pointer
+
+        &__btn2
+            display: none
+            position: absolute
+            top: 0
+            right: 0
+            height: 6vh
+            width: 6vh
+            margin-top: 2vh
+            margin-right: 15px
+            cursor: pointer
+
+        &__container
+            position: absolute
+            display: none
+            flex-direction: column
+            top: 10vh
+            width: 60vw
+            right: 0
+            background-color: white
+
+            &__links
+                display: block
+                line-height: 10vh
+                cursor: pointer
+                font-size: 2em
+                font-family: Libre Caslon Display
+                padding-left: 20px
+
                     
 @media (min-width: 1920px)
     .menu

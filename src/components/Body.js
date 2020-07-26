@@ -11,8 +11,8 @@ class Body extends Component {
         return (
         <Fragment>
             <BrowserRouter>
-                <Menu></Menu>
                 <Main></Main>
+                <Menu></Menu>
             </BrowserRouter>
         </Fragment>
         );

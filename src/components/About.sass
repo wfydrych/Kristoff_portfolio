@@ -2,81 +2,76 @@
     width: 100vw
     height: 90vh
     margin-top: 10vh
-    overflow: hidden
-    background: url(img/bg.png)
-    background-size: cover
-    background-repeat: no-repeat
-    background-position: center
+    overflow: scroll
+    background-color: #DEDEDE
 
-    &__circle
-        display: block
-        position: absolute
-        background-color: #6BA0BE
-        opacity: 0.7
+    &__dot
+        position: relative
+        top: 6vh
+        width: 60px
+        height: 60px
         border-radius: 50%
-        width: 60vw
-        height: 60vw
-        bottom: -15vw
-        left: -10vw
-
-    &__krzys
-        position: absolute
-        bottom: 0
-        left: 100px
-        height: 75vh
-        opacity: 0.9
+        background-color: rgba(42, 120, 164, 0.6)
+        margin-left: 50vw
+        transform: translateX(-220%)
 
     &__title
-        font-family: Montserrat
-        position: absolute
-        display: block
-        color: white
-        font-size: 3em
-        top: 20vh
-        right: 15vw
-
-    &__subtitle
-        font-family: Montserrat
-        position: absolute
-        display: block
-        color: white
-        font-size: 2em
-        top: 40vh
-        right: 10vw
-        width: 40vw
+        position: relative
         text-align: center
+        margin-top: 5vh
+        font-size: 3em
+        font-family: Libre Caslon Display
+        margin-top: calc(5vh - 50px)
+        color: white
+        margin-bottom: 20px
 
-@media (max-width: 950px)
-    .about
+    &__box
+        display: flex
+        flex-direction: row
+        align-items: center
+        family-font: Montserrat
+        margin: 30px 0 30px 0
+
+        &__line
+            &:first-child
+                height: 20px
+                background-color: #2A78A4
 
         &__circle
-                display: block
-                position: absolute
-                background-color: #6BA0BE
-                opacity: 0.7
-                border-radius: 50%
-                width: 70vh
-                height: 70vh
-                bottom: -15vw
-                left: -10vw
+            height: 40px
+            width: 40px
+            background-color: #2A78A4
+            border-radius: 50%
+            transform: translateX(-20px)
 
-        &__krzys
-            position: absolute
-            bottom: 0
-            left: 50vw
-            transform: translateX(-50%)
-            height: 60vh
+        &__txt
+            color: white
+            font-size: 1.3em
+            width: 30vw
 
-        &__title
-            top: 15vh
-            width: 80vw
-            left: 10vw
-            font-size: 1.5em
-            text-align: center
+        &:nth-child(4)
+            flex-direction: row-reverse
 
-        &__subtitle
-            top: 23vh
-            width: 80vw
-            left: 10vw
-            font-size: 1.2em
-            text-align: center
+        &:nth-child(6)
+            flex-direction: row-reverse
+
+.circlespecial
+    transform: translateX(20px)
+
+#line1
+    width: 20vw
+
+#line2
+    width: 25vw
+
+#line3
+    width: 15vw
+
+#line4
+    width: 30vw
+        
+@media (max-width: 950px)
+    .about
+        &__box
+            &__txt
+                width: 50vw
