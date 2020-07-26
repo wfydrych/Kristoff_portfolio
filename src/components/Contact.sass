@@ -5,22 +5,21 @@
     overflow: hidden
 
     &__dot
-        display: block
-        position: absolute
-        top: 15vh
+        position: relative
+        top: 5vh
         width: 50px
         height: 50px
         border-radius: 50%
         background-color: rgba(107, 160, 190, 0.7)
         margin-left: 50vw
-        transform: translateX(-170%)
+        transform: translateX(-160%)
 
     &__title
-        display: block
-        width: auto
+        position: relative
         text-align: center
+        width: 100%
         font-size: 3em
-        margin-top: 5vh
+        margin-top: calc(5vh - 50px)
         font-family: Libre Caslon Display
 
     &__subtitle
@@ -42,6 +41,9 @@
             height: 20vh
             background-color: #DEDEDE
             opacity: 0.9
+            display: flex
+            flex-direction: column
+            justify-content: space-between
 
             span:nth-child(1)
                 display: block
@@ -55,8 +57,9 @@
                 text-align: center
                 font-family: Montserrat
                 font-weight: 600
-                font-size: 1.3em
+                font-size: 1.5em
                 margin-top: 30px
+                margin-bottom: 5px
 
                 img
                     height: 20px

@@ -6,22 +6,22 @@
     background-color: #6BA0BE
 
     &__dot
-        display: block
-        position: absolute
-        top: 16vh
+        position: relative
+        top: 6vh
         width: 50px
         height: 50px
         border-radius: 50%
         background-color: rgba(42, 120, 164, 0.6)
         margin-left: 50vw
-        transform: translateX(220%)
+        transform: translateX(200%)
 
     &__title
-        display: block
+        position: relative
         text-align: center
         margin-top: 5vh
         font-size: 3em
         font-family: Libre Caslon Display
+        margin-top: calc(5vh - 50px)
         color: white
 
     &__bg
@@ -41,6 +41,11 @@
         height: auto
         cursor: pointer
 
+        &:hover
+            transform: scale(1.1)
+            background-color: grey
+            border-radius: 50%
+
     &__right
         display: block
         position: absolute
@@ -49,6 +54,11 @@
         width: 50px
         height: auto
         cursor: pointer
+
+        &:hover
+            transform: scale(1.1)
+            background-color: grey
+            border-radius: 50%
 
     &__dots
         margin-top: 15px
@@ -60,6 +70,29 @@
             height: 30px
             margin: 0 5px 0 5px
             cursor: pointer
+            background-color: grey
+            border-radius: 50%
+            border: 1px solid grey
+            transform: translateY(-60px)
+
+            &:nth-child(1)
+                border: 1px solid white
+
+#bg1
+    display: block
+
+#bg2
+    display: none
+
+#bg3
+    display: none
+
+#bg4
+    display: none
+
+#bg5
+    display: none
+
 
 @media (max-width: 950px)
     .experience

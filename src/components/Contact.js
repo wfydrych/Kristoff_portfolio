@@ -8,8 +8,8 @@ const Contact = () => {
     return (
     <Fragment>
       <div className='contact'>
-        <span className='contact__dot'></span>
-        <span className='contact__title'>Kontakt</span>
+        <div className='contact__dot'></div>
+        <div className='contact__title'>Kontakt</div>
         <span className='contact__subtitle'>Skontaktuj się ze mną</span>
         <div className='contact__numbers'>
             <div className='contact__numbers__box'>
