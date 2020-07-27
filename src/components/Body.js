@@ -1,5 +1,4 @@
 import React, {Component, Fragment} from 'react'
-import { BrowserRouter } from 'react-router-dom'
 import Menu from './Menu'
 import Main from './Main'
 import './Body.sass'
@@ -10,10 +9,8 @@ class Body extends Component {
     render() {
         return (
         <Fragment>
-            <BrowserRouter>
                 <Main></Main>
                 <Menu></Menu>
-            </BrowserRouter>
         </Fragment>
         );
       }}

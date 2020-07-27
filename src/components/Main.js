@@ -5,37 +5,15 @@ import Skills from './Skills'
 import Experience from './Experience'
 import Contact from './Contact'
 import './Main.sass'
-import {Route, Switch, withRouter} from 'react-router-dom'
 
 const Main = () => (
     <section className='main'>
-    <Switch>
-            <Route 
-                exact path='/' 
-                render = {text => <Hero></Hero>}>
-            </Route>
-            <Route 
-                exact path='/hero' 
-                render = {text => <Hero></Hero>}>
-            </Route>
-            <Route 
-                path='/about' 
-                render = {text => <About></About>}>
-            </Route>
-            <Route 
-                path='/skills' 
-                render = {text => <Skills></Skills>}>
-            </Route>
-            <Route 
-                path='/experience' 
-                render = {text => <Experience></Experience>}>
-            </Route>
-            <Route 
-                path='/contact' 
-                render = {text => <Contact></Contact>}>
-            </Route>
-        </Switch>
+        <Hero></Hero>
+        <About></About>
+        <Experience></Experience>
+        <Skills></Skills>
+        <Contact></Contact>
     </section>
 )
 
-export default withRouter(Main)
+export default Main

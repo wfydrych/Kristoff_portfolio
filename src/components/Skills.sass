@@ -1,8 +1,5 @@
 .skills
     width: 100vw
-    height: 90vh
-    margin-top: 10vh
-    overflow: hidden
     background: url(img/skills_bg.png)
     background-size: cover
     background-repeat: no-repeat
@@ -74,7 +71,8 @@
 
 @media (max-width: 950px)
     .skills
-        overflow: scroll
+        min-height: 150vh
+        padding-bottom: 20px
 
         &__mainbox
             justify-content: space-around

@@ -1,8 +1,6 @@
 .about
     width: 100vw
-    height: 90vh
-    margin-top: 10vh
-    overflow: scroll
+    min-height: 90vh
     background-color: #DEDEDE
 
     &__dot
@@ -23,14 +21,13 @@
         font-family: Libre Caslon Display
         margin-top: calc(5vh - 50px)
         color: white
-        margin-bottom: 20px
 
     &__box
         display: flex
         flex-direction: row
         align-items: center
         family-font: Montserrat
-        margin: 30px 0 30px 0
+        margin-top: 50px
 
         &__line
             &:first-child
@@ -54,6 +51,7 @@
 
         &:nth-child(6)
             flex-direction: row-reverse
+            padding-bottom: 10vh
 
 .circlespecial
     transform: translateX(20px)

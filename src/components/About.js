@@ -4,7 +4,7 @@ import './About.sass'
 const About = () => {
     return (
     <Fragment>
-      <div className='about'>
+      <div id='about' className='about'>
         <div className='about__dot'></div>
         <div className='about__title'>Kim jestem?</div>
         <div className='about__box'>

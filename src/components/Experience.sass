@@ -1,8 +1,6 @@
 .experience
     width: 100vw
     height: 90vh
-    margin-top: 10vh
-    overflow: hidden
     background-color: #6BA0BE
 
     &__dot
@@ -24,6 +22,14 @@
         margin-top: calc(5vh - 50px)
         color: white
 
+    &__container
+        display: flex
+        flex-direction: row
+        align-items: center
+        width: 100vw
+        height: 80vh
+        transform: translateY(-50px)
+
     &__bg
         display: block
         margin-top: 5vh
@@ -34,12 +40,10 @@
 
     &__left
         display: block
-        position: absolute
-        left: 10px
-        top: 55vh
         width: 50px
-        height: auto
+        height: 50px
         cursor: pointer
+        margin-left: 15px
 
         &:hover
             transform: scale(1.1)
@@ -48,12 +52,10 @@
 
     &__right
         display: block
-        position: absolute
-        right: 10px
-        top: 55vh
         width: 50px
-        height: auto
+        height: 50px
         cursor: pointer
+        margin-right: 15px
 
         &:hover
             transform: scale(1.1)
@@ -66,14 +68,14 @@
         justify-content: center
 
         &__dot
-            width: 30px
-            height: 30px
+            width: 25px
+            height: 25px
             margin: 0 5px 0 5px
             cursor: pointer
             background-color: grey
             border-radius: 50%
             border: 1px solid grey
-            transform: translateY(-60px)
+            transform: translateY(-110px)
 
             &:nth-child(1)
                 border: 1px solid white
@@ -98,3 +100,14 @@
     .experience
         &__bg
             height: auto
+            max-width: calc(100vw - 100px)
+
+        &__right
+            width: 30px
+            height: 30px
+            margin-right: 5px
+
+        &__left
+            width: 30px
+            height: 30px
+            margin-left: 5px

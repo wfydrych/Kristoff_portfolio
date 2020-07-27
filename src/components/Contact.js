@@ -7,7 +7,7 @@ import lekarz from './img/znanylekarz.png'
 const Contact = () => {
     return (
     <Fragment>
-      <div className='contact'>
+      <div id='contact' className='contact'>
         <div className='contact__dot'></div>
         <div className='contact__title'>Kontakt</div>
         <span className='contact__subtitle'>Skontaktuj się ze mną</span>

@@ -80,17 +80,18 @@ const slider = e => {
 const Experience = () => {
     return (
     <Fragment>
-      <div className='experience'>
+      <div id='experience' className='experience'>
         <div className='experience__dot'></div>
         <div className='experience__title'>Doświadczenie</div>
-        <img className='experience__bg' id='bg1' src={bg1} alt='background' />
-        <img className='experience__bg' id='bg2' src={bg2} alt='background' />
-        <img className='experience__bg' id='bg3' src={bg3} alt='background' />
-        <img className='experience__bg' id='bg4' src={bg4} alt='background' />
-        <img className='experience__bg' id='bg5' src={bg5} alt='background' />
-
-        <img className='experience__left' id='prev' onClick={slider.bind(this)} src={left} alt='arrow-left' />
-        <img className='experience__right' id='next' onClick={slider.bind(this)} src={right} alt='arrow-right' />
+        <div className='experience__container'>
+            <img className='experience__left' id='prev' onClick={slider.bind(this)} src={left} alt='arrow-left' />
+            <img className='experience__bg' id='bg1' src={bg1} alt='background' />
+            <img className='experience__bg' id='bg2' src={bg2} alt='background' />
+            <img className='experience__bg' id='bg3' src={bg3} alt='background' />
+            <img className='experience__bg' id='bg4' src={bg4} alt='background' />
+            <img className='experience__bg' id='bg5' src={bg5} alt='background' />
+            <img className='experience__right' id='next' onClick={slider.bind(this)} src={right} alt='arrow-right' />
+        </div>
         <div className='experience__dots'>
             <div className='experience__dots__dot' id='1' onClick={slider.bind(this)}></div>
             <div className='experience__dots__dot' id='2' onClick={slider.bind(this)}></div>

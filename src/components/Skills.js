@@ -4,7 +4,7 @@ import './Skills.sass'
 const Skills = () => {
     return (
     <Fragment>
-      <div className='skills'>
+      <div id='skills' className='skills'>
         <div className='skills__dot'></div>
         <div className='skills__title'>Umiejętności</div>
         <div className='skills__mainbox'>
