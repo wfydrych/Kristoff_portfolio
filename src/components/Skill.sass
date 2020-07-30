@@ -1,0 +1,82 @@
+.skill
+    width: 100vw
+    min-height: 90vh
+    margin-top: 10vh
+
+    &__title
+        width: 60vw
+        height: 100px
+        background-color: RGBA(42,120,164,0.3)
+        display: flex
+        align-items: center
+        margin-top: 100px
+
+        &__txt
+            font-family: Libre Caslon Display
+            letter-spacing: 0.05em
+            color: white
+            font-size: 2em
+            flex-grow: 1
+            text-align: center
+
+        &__logo
+            height: 100px
+            margin-right: 20px
+
+    &__description
+        box-sizing: border-box
+        font-family: Montserrat
+        margin: 50px
+        color: #6BA0BE
+        font-size: 1.5em
+
+    &__boxes
+        width: 100vw
+        min-height: 25vh
+        display: flex
+
+        &__title
+            display: block
+            box-sizing: border-box
+            width: 100%
+            text-align: center
+            font-family: Libre Caslon Display
+            font-weight: 600
+            letter-spacing: 0.05em
+            font-size: 1.8em
+            padding: 10px
+
+            &__left
+                color: white
+
+            &__right
+                color: #6BA0BE
+
+        &__left
+            background-color: #6BA0BE
+            width: 50%
+
+        &__right
+            width: 50%
+
+        &__txt
+            margin-left: 50%
+            transform: translateX(-50%)
+        
+
+@media (max-width: 950px)
+    .skill
+        &__title
+            width: 90vw
+
+        &__description
+            font-size: 1.2em
+
+        &__boxes
+            flex-wrap: wrap
+
+            &__left
+                width: 100%
+
+            &__right
+                width: 100%
