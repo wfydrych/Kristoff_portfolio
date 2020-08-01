@@ -21,8 +21,24 @@ const Contact = () => {
                 <span><img src={email} alt='email'/>krzysztof@jakubiak.pl</span>
             </div>
         </div>
-        <img className='contact__doctor' src={lekarz} alt='znanylekarz' />
-      </div>
+        <div className='contact__doctor'>
+            <a id="zl-url" class="zl-url" href="https://www.znanylekarz.pl/krzysztof-jakubiak/fizjoterapeuta/zory" rel="nofollow" 
+            data-zlw-doctor="krzysztof-jakubiak" data-zlw-type="big" data-zlw-opinion="false" data-zlw-hide-branding="true">Krzysztof Jakubiak - ZnanyLekarz.pl</a>
+            {
+                function($_x,_s,id) {
+                    var js,
+                    fjs=$_x.getElementsByTagName(_s)[0]
+                    if (!$_x.getElementById(id)) {
+                        js = $_x.createElement(_s)
+                        js.id = id
+                        js.src = "//platform.docplanner.com/js/widget.js"
+                        fjs.parentNode.insertBefore(js,fjs)
+                    }
+                }
+            (document,"script","zl-widget-s")
+            }
+        </div>
+    </div>
     </Fragment>
     )
   }

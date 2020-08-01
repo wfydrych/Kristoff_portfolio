@@ -5,7 +5,7 @@ import './Skill.sass'
 const Skill = () => {
     return (
     <Fragment>
-        <div className='skill'>
+        <div id='skill' className='skill'>
             <div className='skill__title'>
                 <div className='skill__title__txt'>Rehabilitacja ortopedyczna</div>
                 <img src={skill_logo} className='skill__title__logo' alt='logo'/>

@@ -7,7 +7,7 @@ import Contact from './Contact'
 import './Main.sass'
 
 const Main = () => (
-    <section className='main'>
+    <section id='main' className='main'>
         <Hero></Hero>
         <About></About>
         <Experience></Experience>

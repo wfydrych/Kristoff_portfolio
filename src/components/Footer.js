@@ -11,9 +11,9 @@ const Footer = () => {
             <div className='footer__socials'>
                 <span className='footer__title'>Znajdź mnie:</span>
                 <div className='footer__socials__box'>
-                    <img src={fb} className='footer__socials__box__icon' alt='facebook' />
-                    <img src={ig} className='footer__socials__box__icon' alt='instagram' />
-                    <img src={zn} className='footer__socials__box__icon' alt='znanylekarz' />
+                    <a href="https://www.facebook.com/profile.php?id=100000683508078" target="_blank"><img src={fb} className='footer__socials__box__icon' alt='facebook' /></a>
+                    <a href="https://www.instagram.com/kris_jakk/" target="_blank"><img src={ig} className='footer__socials__box__icon' alt='instagram' /></a>
+                    <a href="https://www.znanylekarz.pl/krzysztof-jakubiak/fizjoterapeuta/zory" target="_blank"><img src={zn} className='footer__socials__box__icon' alt='znanylekarz' /></a>
                 </div>
             </div>
             <div className='footer__special'>
