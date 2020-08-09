@@ -22,17 +22,41 @@ const slider = e => {
         let slide
 
         if (e.target.id === 'prev') {
-            if (bg1.style.display !== 'none') slide = '4'
-            else if (bg2.style.display !== 'none') slide = '1'
-            else if (bg3.style.display !== 'none') slide = '2'
-            else if (bg4.style.display !== 'none') slide = '3'
+            if (bg1.style.opacity === '1') {
+                slide = '4'
+                i = 4
+            }
+            else if (bg2.style.opacity === '1') {
+                slide = '1'
+                i = 1
+            }
+            else if (bg3.style.opacity === '1') {
+                slide = '2'
+                i = 2
+            }
+            else if (bg4.style.opacity === '1') {
+                slide = '3'
+                i = 3
+            }
         }
 
         else if (e.target.id === 'next') {
-            if (bg1.style.display !== 'none') slide = '2'
-            else if (bg2.style.display !== 'none') slide = '3'
-            else if (bg3.style.display !== 'none') slide = '4'
-            else if (bg4.style.display !== 'none') slide = '1'
+            if (bg1.style.opacity === '1') {
+                slide = '2'
+                i = 2
+            }
+            else if (bg2.style.opacity === '1') {
+                slide = '3'
+                i = 3
+            }
+            else if (bg3.style.opacity === '1') {
+                slide = '4'
+                i = 4
+            }
+            else if (bg4.style.opacity === '1') {
+                slide = '1'
+                i = 1
+            }
         }
 
         else slide = e.target.id
@@ -41,28 +65,48 @@ const slider = e => {
         bg2.style.display = 'none'
         bg3.style.display = 'none'
         bg4.style.display = 'none'
-        dot1.style.backgroundColor = '#858585'
-        dot2.style.backgroundColor = '#858585'
-        dot3.style.backgroundColor = '#858585'
-        dot4.style.backgroundColor = '#858585'
+        bg1.style.opacity = '0'
+        bg2.style.opacity = '0'
+        bg3.style.opacity = '0'
+        bg4.style.opacity = '0'
+        dot1.style.backgroundColor = '#00000000'
+        dot2.style.backgroundColor = '#00000000'
+        dot3.style.backgroundColor = '#00000000'
+        dot4.style.backgroundColor = '#00000000'
 
     if (slide === '1') {
         bg1.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg1.style.opacity = 1
+        }, 1)
         dot1.style.backgroundColor = 'white'
     }
 
     else if (slide === '2') {
         bg2.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg2.style.opacity = 1
+        }, 1)
         dot2.style.backgroundColor = 'white'
     }
 
     else if (slide === '3') {
         bg3.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg3.style.opacity = 1
+        }, 1)
         dot3.style.backgroundColor = 'white'
     }
 
     else if (slide === '4') {
         bg4.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg4.style.opacity = 1
+        }, 1)
         dot4.style.backgroundColor = 'white'
     }
 }
@@ -101,36 +145,61 @@ const autoSwitch = () => {
     const dot2 = document.getElementById('2')
     const dot3 = document.getElementById('3')
     const dot4 = document.getElementById('4')
-        bg1.style.display = 'none'
-        bg2.style.display = 'none'
-        bg3.style.display = 'none'
-        bg4.style.display = 'none'
-        dot1.style.backgroundColor = '#858585'
-        dot2.style.backgroundColor = '#858585'
-        dot3.style.backgroundColor = '#858585'
-        dot4.style.backgroundColor = '#858585'
+    bg1.style.display = 'none'
+    bg2.style.display = 'none'
+    bg3.style.display = 'none'
+    bg4.style.display = 'none'
+    bg1.style.opacity = '0'
+    bg2.style.opacity = '0'
+    bg3.style.opacity = '0'
+    bg4.style.opacity = '0'
+    dot1.style.backgroundColor = '#00000000'
+    dot2.style.backgroundColor = '#00000000'
+    dot3.style.backgroundColor = '#00000000'
+    dot4.style.backgroundColor = '#00000000'
 
     if (i === 1) {
+        
         bg1.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg1.style.opacity = 1
+        }, 1)
+        
         dot1.style.backgroundColor = 'white'
     }
 
     else if (i === 2) {
+        
         bg2.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg2.style.opacity = 1
+        }, 1)
         dot2.style.backgroundColor = 'white'
     }
 
     else if (i === 3) {
+        
         bg3.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg3.style.opacity = 1
+        }, 1)
         dot3.style.backgroundColor = 'white'
     }
 
     else if (i === 4) {
+        
         bg4.style.display = 'block'
+        setTimeout(function(){ 
+
+            bg4.style.opacity = 1
+        }, 1)
         dot4.style.backgroundColor = 'white'
     }
       i++
-      if (i===5) i=1
+      if (i === 5) i = 1
       setTimeout(autoSwitch, 5000)
 }
 

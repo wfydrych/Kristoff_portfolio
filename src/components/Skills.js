@@ -2,6 +2,7 @@ import React, {Component, Fragment} from 'react'
 import './Skills.sass'
 
 const showSkill = () => {
+    window.scrollTo(0, 0)
     document.getElementById('skill').style.display = 'block'
     document.getElementById('main').style.display = 'none'
 }

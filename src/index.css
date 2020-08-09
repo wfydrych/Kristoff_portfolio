@@ -3,6 +3,7 @@
 
 html {
   scroll-padding-top: calc(10vh - 1px);
+  scroll-behavior: smooth
 }
 
 body {
