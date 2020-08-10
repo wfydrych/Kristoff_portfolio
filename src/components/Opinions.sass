@@ -1,0 +1,82 @@
+.opinions
+    width: 100vw
+    min-height: 70vh
+    background-color: #F8F8F8
+
+    &__dot
+        position: relative
+        top: 5vh
+        width: 50px
+        height: 50px
+        border-radius: 50%
+        background-color: rgba(107, 160, 190, 0.7)
+        margin-left: 50vw
+        transform: translateX(-160%)
+
+    &__title
+        position: relative
+        text-align: center
+        width: 100%
+        font-size: 3em
+        margin-top: calc(5vh - 50px)
+        font-family: Libre Caslon Display
+
+    &__subtitle
+        display: block
+        margin-top: 15px
+        width: 100vw    
+        text-align: center
+        font-size: 1.5em
+        font-family: Montserrat
+
+    &__container
+        width: 90vw
+        margin-left: 5vw
+        display: flex
+        flex-wrap: wrap
+        flex-direction: row
+        justify-content: space-evenly
+        box-sizing: border-box
+    
+    &__subcontainer
+        width: 45vw
+        margin: 0
+        padding: 0
+        display: flex
+        flex-wrap: wrap
+        flex-direction: column
+        box-sizing: border-box
+
+    &__opinion
+        box-sizing: border-box
+        background-color: #DEDEDE
+        color: black
+        font-family: Montserrat
+        width: auto
+        padding: 30px
+        margin: 30px
+        flex-shrink: 1
+
+        &:nth-child(even)
+            background-color: #F4F4F4
+
+        &__txt
+            text-align: justify
+
+        &__name
+            text-align: right
+            font-weight: 600
+
+@media (max-width: 950px)
+    .opinions
+        &__container
+            width: 100vw
+            margin-left: 0
+            padding-left: 0
+
+        &__subcontainer
+            width: 100%
+
+        &__opinion
+            width: 80vw
+            margin-left: 10vw
